@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whizz Framework Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    section {
+      margin: 2rem 0;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Whizz Framework Demo</h1>
+  <p>A minimal, type-safe web component framework</p>
+
+  <section>
+    <h2>Simple Component</h2>
+    <my-greeting name="TypeScript"></my-greeting>
+  </section>
+
+  <section>
+    <h2>Async Component with Loading State</h2>
+    <data-fetcher url="https://api.github.com/repos/socketsupply/tonic"></data-fetcher>
+  </section>
+
+  <section>
+    <h2>Stateful Counter</h2>
+    <counter></counter>
+  </section>
+
+  <section>
+    <h2>Lifecycle Demo</h2>
+    <lifecycle-demo></lifecycle-demo>
+  </section>
+
+  <script type="module" src="./example.js"></script>
+</body>
+</html>
